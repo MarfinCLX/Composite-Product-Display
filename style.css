@@ -9,6 +9,10 @@ html, body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; 
 }
 
+p {
+    line-height: 1.5;
+}
+
 .header-container {
     display: flex;
     justify-content: space-between;
@@ -20,9 +24,10 @@ html, body {
 }
 
 .brand-name-container h1 {
-    font-weight: 800;
+    font-weight: 900;
     font-size: 26px;
     letter-spacing: 0.5px;
+    padding-left: 40px;
 }
 
 a {
@@ -62,5 +67,83 @@ a {
 }
 
 .cart-btn:active {
-    transform: scaleX(0.98);
+    transform: scale(0.95);
+}
+
+.shop-collection {
+    padding: 100px 30px 20px;
+}
+
+.shop-collection-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.shop-text-container {
+    max-width: 480px;
+}
+
+.new-collection-text {
+    display: inline-flex;
+    background-color: #d8ece8;
+    color: green;
+    text-align: center;
+    padding: 9px 12px;
+    border: none;
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: 550;
+}
+
+.mini-bio-container {
+    padding-top: 15px;
+}
+
+.mini-bio-container h2 {
+    font-size: 36px;
+    letter-spacing: 0.5px;
+}
+
+.mini-bio-container p {
+    padding-top: 10px;
+    font-size: 17px;
+    color: grey;
+    font-weight: 450;
+    letter-spacing: 0.3px;
+}
+
+.shop-collection-btn {
+    margin-top: 20px;
+    color: rgb(252, 246, 252);
+    background-color: green;
+    padding: 15px 27px;
+    font-size: 20px;
+    font-weight: 550;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.shop-collection-btn:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transform: scale(1.02);
+}
+
+.shop-collection-btn:active {
+    transform: scale(0.95);
+}
+
+.right-side-card {
+    background: linear-gradient(135deg, #cfe8d8 0%, #a9d4bb 100%);
+    width: 280px;
+    height: 270px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.right-side-card:hover {
+    transform: scale(1.015);
+    box-shadow: 0 0 10px #9bccaf;
 }
